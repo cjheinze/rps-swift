@@ -3,4 +3,4 @@ xcode_project: RPS-Swift.xcodeproj # path to your xcodeproj folder
 xcode_scheme: RPS-Swift
 xcode_destination: platform=macOS
 script:
-  - xcodebuild test -scheme RPS-SwiftTests
+  - xcodebuild test -project RPS-Swift.xcodeproj -scheme RPS-SwiftTests
