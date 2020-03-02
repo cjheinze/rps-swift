@@ -7,31 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F76635F240D0FCF00375A6B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76635E240D0FCF00375A6B /* main.swift */; };
+		3F76639A240D118800375A6B /* RPS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F766391240D118800375A6B /* RPS_Swift.framework */; };
+		3F76639F240D118800375A6B /* RPS_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76639E240D118800375A6B /* RPS_SwiftTests.swift */; };
+		3F7663A1240D118800375A6B /* RPS_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F766393240D118800375A6B /* RPS_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F7663A9240D11A400375A6B /* RPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7663A8240D11A400375A6B /* RPS.swift */; };
+		3F7663AA240D121500375A6B /* RPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7663A8240D11A400375A6B /* RPS.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		3F766359240D0FCF00375A6B /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
+/* Begin PBXContainerItemProxy section */
+		3F76639B240D118800375A6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F766353240D0FCF00375A6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F766390240D118800375A6B;
+			remoteInfo = "RPS-Swift";
 		};
-/* End PBXCopyFilesBuildPhase section */
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F76635B240D0FCF00375A6B /* RPS-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "RPS-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F76635E240D0FCF00375A6B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3F766391240D118800375A6B /* RPS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RPS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F766393240D118800375A6B /* RPS_Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPS_Swift.h; sourceTree = "<group>"; };
+		3F766394240D118800375A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F766399240D118800375A6B /* RPS-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPS-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F76639E240D118800375A6B /* RPS_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS_SwiftTests.swift; sourceTree = "<group>"; };
+		3F7663A0240D118800375A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7663A8240D11A400375A6B /* RPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3F766358240D0FCF00375A6B /* Frameworks */ = {
+		3F76638E240D118800375A6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F766396240D118800375A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F76639A240D118800375A6B /* RPS_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +56,8 @@
 		3F766352240D0FCF00375A6B = {
 			isa = PBXGroup;
 			children = (
-				3F76635D240D0FCF00375A6B /* RPS-Swift */,
+				3F766392240D118800375A6B /* RPS-Swift */,
+				3F76639D240D118800375A6B /* RPS-SwiftTests */,
 				3F76635C240D0FCF00375A6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,29 +65,53 @@
 		3F76635C240D0FCF00375A6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F76635B240D0FCF00375A6B /* RPS-Swift */,
+				3F766391240D118800375A6B /* RPS_Swift.framework */,
+				3F766399240D118800375A6B /* RPS-SwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3F76635D240D0FCF00375A6B /* RPS-Swift */ = {
+		3F766392240D118800375A6B /* RPS-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				3F76635E240D0FCF00375A6B /* main.swift */,
+				3F766393240D118800375A6B /* RPS_Swift.h */,
+				3F766394240D118800375A6B /* Info.plist */,
+				3F7663A8240D11A400375A6B /* RPS.swift */,
 			);
 			path = "RPS-Swift";
 			sourceTree = "<group>";
 		};
+		3F76639D240D118800375A6B /* RPS-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F76639E240D118800375A6B /* RPS_SwiftTests.swift */,
+				3F7663A0240D118800375A6B /* Info.plist */,
+			);
+			path = "RPS-SwiftTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		3F76638C240D118800375A6B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7663A1240D118800375A6B /* RPS_Swift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		3F76635A240D0FCF00375A6B /* RPS-Swift */ = {
+		3F766390240D118800375A6B /* RPS-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F766362240D0FCF00375A6B /* Build configuration list for PBXNativeTarget "RPS-Swift" */;
+			buildConfigurationList = 3F7663A2240D118800375A6B /* Build configuration list for PBXNativeTarget "RPS-Swift" */;
 			buildPhases = (
-				3F766357240D0FCF00375A6B /* Sources */,
-				3F766358240D0FCF00375A6B /* Frameworks */,
-				3F766359240D0FCF00375A6B /* CopyFiles */,
+				3F76638C240D118800375A6B /* Headers */,
+				3F76638D240D118800375A6B /* Sources */,
+				3F76638E240D118800375A6B /* Frameworks */,
+				3F76638F240D118800375A6B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -79,8 +119,26 @@
 			);
 			name = "RPS-Swift";
 			productName = "RPS-Swift";
-			productReference = 3F76635B240D0FCF00375A6B /* RPS-Swift */;
-			productType = "com.apple.product-type.tool";
+			productReference = 3F766391240D118800375A6B /* RPS_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3F766398240D118800375A6B /* RPS-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F7663A5240D118800375A6B /* Build configuration list for PBXNativeTarget "RPS-SwiftTests" */;
+			buildPhases = (
+				3F766395240D118800375A6B /* Sources */,
+				3F766396240D118800375A6B /* Frameworks */,
+				3F766397240D118800375A6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F76639C240D118800375A6B /* PBXTargetDependency */,
+			);
+			name = "RPS-SwiftTests";
+			productName = "RPS-SwiftTests";
+			productReference = 3F766399240D118800375A6B /* RPS-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,7 +150,11 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Carl-Johan Heinze";
 				TargetAttributes = {
-					3F76635A240D0FCF00375A6B = {
+					3F766390240D118800375A6B = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					3F766398240D118800375A6B = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -110,21 +172,56 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3F76635A240D0FCF00375A6B /* RPS-Swift */,
+				3F766390240D118800375A6B /* RPS-Swift */,
+				3F766398240D118800375A6B /* RPS-SwiftTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3F76638F240D118800375A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F766397240D118800375A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		3F766357240D0FCF00375A6B /* Sources */ = {
+		3F76638D240D118800375A6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F76635F240D0FCF00375A6B /* main.swift in Sources */,
+				3F7663A9240D11A400375A6B /* RPS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F766395240D118800375A6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F76639F240D118800375A6B /* RPS_SwiftTests.swift in Sources */,
+				3F7663AA240D121500375A6B /* RPS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F76639C240D118800375A6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F766390240D118800375A6B /* RPS-Swift */;
+			targetProxy = 3F76639B240D118800375A6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3F766360240D0FCF00375A6B /* Debug */ = {
@@ -240,23 +337,96 @@
 			};
 			name = Release;
 		};
-		3F766363240D0FCF00375A6B /* Debug */ = {
+		3F7663A3240D118800375A6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K6YPJ9H6JZ;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "RPS-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "se.parkster.RPS-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F7663A4240D118800375A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K6YPJ9H6JZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "RPS-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "se.parkster.RPS-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3F7663A6240D118800375A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K6YPJ9H6JZ;
+				INFOPLIST_FILE = "RPS-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "se.parkster.RPS-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		3F766364240D0FCF00375A6B /* Release */ = {
+		3F7663A7240D118800375A6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = K6YPJ9H6JZ;
-				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "RPS-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "se.parkster.RPS-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -274,11 +444,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F766362240D0FCF00375A6B /* Build configuration list for PBXNativeTarget "RPS-Swift" */ = {
+		3F7663A2240D118800375A6B /* Build configuration list for PBXNativeTarget "RPS-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F766363240D0FCF00375A6B /* Debug */,
-				3F766364240D0FCF00375A6B /* Release */,
+				3F7663A3240D118800375A6B /* Debug */,
+				3F7663A4240D118800375A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F7663A5240D118800375A6B /* Build configuration list for PBXNativeTarget "RPS-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F7663A6240D118800375A6B /* Debug */,
+				3F7663A7240D118800375A6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
